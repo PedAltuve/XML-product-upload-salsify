@@ -140,48 +140,48 @@ All products have been updated successfully!
 
 ### nokogiri (~> 1.18)
 
-• Purpose: XML parsing with XPath support
-• Why chosen:
- • Robust error handling and validation
- • XPath support makes node selection simple and readable
-• Alternatives considered:
- • Ox (fast but less feature-rich)
+- Purpose: XML parsing with XPath support
+- Why chosen:
+  - Robust error handling and validation
+  - Path support makes node selection simple and readable
+- Alternatives considered:
+  -  Ox (fast but less feature-rich)
 
 ### dotenv (~> 3.1)
 
-• Purpose: Load environment variables from .env file
-• Why chosen:
- • De facto standard for managing environment configuration in Ruby
- • Prevents hardcoding credentials in source code
- • Simple, zero-configuration setup
+- Purpose: Load environment variables from .env file
+- Why chosen:
+  - De facto standard for managing environment configuration in Ruby
+  - Prevents hardcoding credentials in source code
+  - Simple, zero-configuration setup
 
 ### net/http (Ruby stdlib)
 
-• Purpose: HTTP client for Salsify API requests
-• Why chosen:
- • Built into Ruby (no external dependency)
- • Direct control over request/response handling
- • Sufficient for simple REST API calls
- • Better debugging than abstraction layers
-• Alternatives considered:
- • Faraday (caused authentication issues with Bearer tokens)
+- Purpose: HTTP client for Salsify API requests
+- Why chosen:
+  - Built into Ruby (no external dependency)
+  - Direct control over request/response handling
+  - Sufficient for simple REST API calls
+  - Better debugging than abstraction layers
+- Alternatives considered:
+  - Faraday (caused authentication issues with Bearer tokens)
 
 ### net/ftp (Ruby stdlib)
 
-• Purpose: FTP client for downloading XML files
-• Why chosen:
- • Built into Ruby (no external dependency)
- • Simple interface for basic FTP operations
- • Binary transfer mode support
+- Purpose: FTP client for downloading XML files
+- Why chosen:
+  - Built into Ruby (no external dependency)
+  - Simple interface for basic FTP operations
+  - Binary transfer mode support
 
 ### minitest (Ruby stdlib)
 
-• Purpose: Testing framework
-• Why chosen:
- • Built into Ruby (no external dependency)
- • Simple, readable test syntax
- • Powerful mocking capabilities
- • Fast test execution
+- Purpose: Testing framework
+- Why chosen:
+  - Built into Ruby (no external dependency)
+  - Simple, readable test syntax
+  - Powerful mocking capabilities
+  - Fast test execution
 
 ## How long did I spend on this exercise?
 
@@ -191,9 +191,9 @@ then I began having issues with Faraday in the main file.
 So it took me about 30 more minutes to debug, ditch Faraday and start over,
 and update the tests.
 
-And finally, about 20 minutes to write the README
+And finally, about 30 more minutes to write the README
 
-All in all, close to 2 hours overall.
+All in all, 2 hours overall.
 
 ## What would I add if I had unlimited/more time?
 
