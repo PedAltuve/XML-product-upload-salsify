@@ -37,10 +37,10 @@ The script uses three services in sequence:
 ## Documentation used
 
 - Perplexity and google to search for an XML gem.
-- [Faraday's documentation] (<https://lostisland.github.io/faraday/#/middleware/included/authentication>)
-- [Nokogiri's documentation] (<https://nokogiri.org/index.html>)
-- [Net::FTP documentation] (<https://ruby-doc.org/3.4.1/gems/net-ftp/Net/FTP.html#method-i-getbinaryfile>)
-- [Net::HTTP documentation] (<https://ruby-doc.org/core-3.1.2/Net/HTTP.html>)
+- Faraday's documentation (<https://lostisland.github.io/faraday/#/middleware/included/authentication>)
+- Nokogiri's documentation (<https://nokogiri.org/index.html>)
+- Net::FTP documentation (<https://ruby-doc.org/3.4.1/gems/net-ftp/Net/FTP.html#method-i-getbinaryfile>)
+- Net::HTTP documentation (<https://ruby-doc.org/core-3.1.2/Net/HTTP.html>)
 
 ## Architecture decisions
 
@@ -142,7 +142,6 @@ All products have been updated successfully!
 
 • Purpose: XML parsing with XPath support
 • Why chosen:
- • Industry standard for XML/HTML parsing in Ruby
  • Robust error handling and validation
  • XPath support makes node selection simple and readable
 • Alternatives considered:
@@ -155,8 +154,6 @@ All products have been updated successfully!
  • De facto standard for managing environment configuration in Ruby
  • Prevents hardcoding credentials in source code
  • Simple, zero-configuration setup
-• Alternatives considered:
- • Manual ENV loading (more error-prone)
 
 ### net/http (Ruby stdlib)
 
@@ -176,8 +173,6 @@ All products have been updated successfully!
  • Built into Ruby (no external dependency)
  • Simple interface for basic FTP operations
  • Binary transfer mode support
-• Alternatives considered:
- • None - FTP is the required protocol per spec
 
 ### minitest (Ruby stdlib)
 
@@ -187,8 +182,6 @@ All products have been updated successfully!
  • Simple, readable test syntax
  • Powerful mocking capabilities
  • Fast test execution
-• Alternatives considered:
- • None
 
 ## How long did I spend on this exercise?
 
