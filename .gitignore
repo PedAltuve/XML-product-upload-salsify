@@ -1,0 +1,4 @@
+.env
+.env*.local
+./ruby-lsp
+.DS_Store
